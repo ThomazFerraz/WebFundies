@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add a click event listener to the "Register" button
     registerButton.addEventListener('click', function() {
-        // Redirect the user to the "user" page
-        window.location.href = '/user';
+        // Redirect the user to the "register" page
+        window.location.href = '/register';
     });
 });

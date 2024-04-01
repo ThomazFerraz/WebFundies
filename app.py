@@ -8,9 +8,9 @@ def index():
     return render_template('homepage.html')
 
 
-@app.route('/user')
+@app.route('/register')
 def user():
-    return render_template('user.html')
+    return render_template('register.html')
 
 
 app.static_folder = 'static'
