@@ -1,10 +1,37 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timeless Inn</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>My name is {{username}}</p>
+  <div class="container">
+    <div class="left-side">
+      <header>
+        <h1 class="title">Timeless Inn</h1>
+      </header>
+      <p class="subtitle">Register your login credentials, here is not where you will tell me your adventurer name, just a user name to acces the website...</p>
+      <form action="/register" method="post">
+        <div class="input-container">
+          <input type="text" name="full_name" placeholder="Full Name" required>
+        </div>
+        <div class="input-container">
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="input-container">
+          <input type="password" name="password" placeholder="Password" required>
+        </div>
+        <div class="button-container">
+          <button type="submit">Register</button>
+        </div>
+      </form>
+    </div>
+    <div class="right-side">
+      <img class="tavern-image" src="{{ url_for('static', filename='inn.png') }}" alt="Medieval Tavern">
+    </div>
+  </div>
 </body>
 </html>
