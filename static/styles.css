@@ -48,6 +48,7 @@ body, html {
 header {
   position: fixed;
   margin-bottom: 450px;
+  padding-bottom: 50px;
   text-shadow:
     -2px -2px 0 #eaea0b,
     2px -2px 0 #eaea0b,

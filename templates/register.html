@@ -13,7 +13,7 @@
       <header>
         <h1 class="title">Timeless Inn</h1>
       </header>
-      <p class="subtitle">Register your login credentials, here is not where you will tell me your adventurer name, just a user name to acces the website...</p>
+      <p class="subtitle">Register your login credentials, here is not where you will tell me your adventurer name, just a username to access the website...</p>
       <form action="/register" method="post">
         <div class="input-container">
           <input type="text" name="username" placeholder="Username" required>
@@ -24,6 +24,9 @@
         <div class="input-container">
           <input type="password" name="password" placeholder="Password" required>
         </div>
+        <div class="input-container">
+          <input type="password" name="confirm-password" placeholder="Confirm Password" required>
+        </div>
         <div class="button-container">
           <button type="submit">Register</button>
         </div>
@@ -33,5 +36,6 @@
       <img class="tavern-image" src="{{ url_for('static', filename='inn.png') }}" alt="Medieval Tavern">
     </div>
   </div>
+  <form action="/register" method="post" onsubmit="return validatePassword();">
 </body>
 </html>

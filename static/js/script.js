@@ -11,3 +11,18 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = '/register';
     });
 });
+
+
+  // Function to validate password match
+  function validatePassword() {
+    var password = document.getElementById("password").value;
+    var confirm_password = document.getElementById("confirm_password").value;
+
+    if (password != confirm_password) {
+      alert("Passwords do not match");
+      return false;
+    }
+    return true;
+  }
+
+
