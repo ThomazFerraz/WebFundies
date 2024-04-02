@@ -39,15 +39,15 @@ body, html {
 
 .tavern-image {
   width: 125%;
-  height: fit-content;
+  height: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
 }
 
 header {
-  position: absolute;
-  padding-bottom: 450px;
+  position: fixed;
+  margin-bottom: 450px;
   text-shadow:
     -2px -2px 0 #eaea0b,
     2px -2px 0 #eaea0b,
@@ -91,4 +91,18 @@ header {
 }
 .button-container button:hover {
   background-color: #c0c021; /* Button background color on hover */
+}
+
+.input-container {
+  margin-bottom: 20px; /* Add space between input fields */
+}
+
+.input-container input[type="text"],
+.input-container input[type="email"],
+.input-container input[type="password"] {
+  width: 100%; /* Make input fields wider */
+  padding: 10px; /* Increase padding for better spacing */
+  border-radius: 10px; /* Add rounded corners */
+  border: 1px solid #ccc; /* Add border for better visibility */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
 }
